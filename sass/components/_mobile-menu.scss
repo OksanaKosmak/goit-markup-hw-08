@@ -1,0 +1,213 @@
+@media screen and (max-width:767px) {
+    .mobile-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        max-height: 796px;
+        z-index: 1000;
+        background-color: var(--color-background-third);
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 0 100vmax  rgba(0, 0, 0, 0.5);
+    
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 500ms linear, visibility 500ms linear;
+    }
+    
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
+    .mobile-menu__container {
+        position: relative;
+        padding-left: 25px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    
+    .mobile-menu__close-button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+    } 
+
+    /*.nav {
+        display: flex;
+        align-items: center;
+    }*/
+    
+    .mobile-nav-menu {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mobile-nav-menu__item {
+        display: inline-block;
+    }
+    
+    .mobile-nav-menu__item + .nav-menu__item {
+        margin-left: 50px;    
+    }
+    
+    .mobile-nav-menu__link {
+        color: var(--color-primary);
+        text-decoration: none;
+        line-height: 1.1428;
+        font-weight: 500;
+        text-align: left;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mobile-nav-menu__link:hover {
+        color: var(--color);
+    }
+    
+    .mobile-nav-menu__link:focus {
+        color: var(--color);
+    }
+    
+    .mobile-nav-menu .mobile-nav-menu__link.current {
+        color: var(--color);
+    }
+    
+    .mobile-nav-link {
+        position: relative;
+        }
+    
+    .mobile-link-nav-portfolio {
+        position: relative;
+    }
+    
+    /*.mobile-nav-link::after {
+        content: '';
+        display: block;
+        width: 48px;
+        height: 4px;
+        background-color: var(--color-link-underline);
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        border-radius: 2px;
+    }
+            
+    .mobile-link-nav-portfolio::after {
+        content: '';
+        display: block;
+        width: 78px;
+        height: 4px;
+        background-color: var(--color-link-underline);
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        border-radius: 2px;
+    }*/
+
+    .mobile-menu-сontacts {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    
+    .mobile-menu-contacts__item + .mobile-menu-contacts__item {
+        margin-left: 50px;
+    }
+    
+    .mobile-menu-contacts__link {
+        color: var(--color-third);
+        text-decoration: none;
+        line-height: 1.1428;
+        font-weight: 500;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        letter-spacing: 0.02em;
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mobile-menu-contacts__link:hover {
+        color: var(--color);
+    }
+    
+    .mobile-menu-contacts__link:focus {
+        color: var(--color);
+    }
+    
+       
+    .mobile-menu-contacts__link:hover {
+        fill: var(--color-background-icon-hover);
+    }
+
+    .mobile-menu-social {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mobile-menu-social__item {
+        display: inline-block;
+    }
+    
+    .mobile-menu-social__item + .mobile-menu-social__item {
+        margin-left: 50px;    
+    }
+    
+    .mobile-menu-social__link {
+        color: var(--color-primary);
+        text-decoration: none;
+        line-height: 1.1428;
+        font-weight: 500;
+        text-align: left;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mobile-menu-social__link:hover {
+        color: var(--color);
+    }
+    
+    .mobile-menu-social__link:focus {
+        color: var(--color);
+    }
+    
+    .mobile-menu-social .mobile-menu-social__link.current {
+        color: var(--color);
+    }
+    
+    /*.mobile-menu-social-link {
+        position: relative;
+        }
+    
+    .mobile-link-nav-portfolio {
+        position: relative;
+    }*/
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }    
+}
+
+
