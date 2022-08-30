@@ -114,7 +114,7 @@
                 <button class="hero-section__button" type="button" data-modal-open >Заказать услугу</button>
             </div>
         </section>
-        <section class="especially-section section">
+       <section class="especially-section section">
             <div class="container">
                 <h2 class="title visually-hidden">Особенности</h2>
             <ul class="especially-section__list">
@@ -157,13 +157,20 @@
             </ul>
             </div>
         </section>
-        <!--<section class="do-section do-section-do section">
+        <section class="do-section do-section-do section">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="do-section__list">
                     <li class="do-section__item">
                         <div class="do-thumb">
-                            <img src="./images/box1.jpg" width="370" height="295" alt="Десктопные приложения">
+                            <!--<img src="./images/box1.jpg" width="370" height="295" alt="Десктопные приложения">-->
+                            <picture>
+                                <source
+                                srcset="./images/box1-desktop.jpg 1x, ./images/box1-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />                               
+                                <img src="./images/box1-desktop.jpg" alt="Десктопные приложения" />
+                            </picture>    
                             <div class="do-thumb__list">
                             <p class="do-thumb__description">Десктопные приложения</p>
                             </div>
@@ -171,7 +178,14 @@
                     </li>
                     <li class="do-section__item">
                         <div class="do-thumb">
-                            <img src="./images/box2.jpg" width="370" height="295" alt="Мобильные приложения">
+                            <!--<img src="./images/box2.jpg" width="370" height="295" alt="Мобильные приложения">-->
+                            <picture>
+                                <source
+                                srcset="./images/box2-desktop.jpg 1x, ./images/box2-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />
+                                <img src="./images/box2-desktop.jpg" alt="Мобильные приложения" />
+                            </picture>
                             <div class="do-thumb__list">
                             <p class="do-thumb__description">Мобильные приложения</p>
                             </div>
@@ -179,7 +193,14 @@
                     </li>
                     <li class="do-section__item">
                         <div class="do-thumb">
-                            <img src="./images/box3.jpg" width="370" height="295" alt="Дизайнерские решения">
+                            <!--<img src="./images/box3.jpg" width="370" height="295" alt="Дизайнерские решения">-->
+                            <picture>
+                                <source
+                                srcset="./images/box3-desktop.jpg 1x, ./images/box3-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />                                
+                                <img src="./images/box3-desktop.jpg" alt="Дизайнерские приложения" />
+                            </picture>
                             <div class="do-thumb__list">
                             <p class="do-thumb__description">Дизайнерские решения</p>
                             </div>
@@ -187,13 +208,28 @@
                     </li>
                 </ul>
             </div>          
-        </section>-->
-        <!--<section class="comand-section comand-section-actions section">
+        </section>
+        <section class="comand-section comand-section-actions section">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="comand-section__list">
                     <li class="comand-section__item">
-                        <img class="comand-section__image" src="./images/img1.jpg" width="270" height="260" alt="Игорь Демьяненко Product Designer">
+                        <!--<img class="comand-section__image" src="./images/img1.jpg" width="270" height="260" alt="Игорь Демьяненко Product Designer">-->
+                            <picture>
+                                <source
+                                srcset="./images/img1-desktop.jpg 1x, ./images/img1-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />
+                                <source
+                                srcset="./images/img1-tablet.jpg 1x, ./images/img1-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="./images/img1-mobile.jpg 1x, ./images/img1-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                />
+                                <img class="comand-section__image" src="./images/img1-mobile.jpg" alt="Игорь Демьяненко Product Designer" />
+                            </picture>                                                                                               
                         <h3 class="comand-section__subtitle">Игорь Демьяненко</h3>
                         <p class="comand-section__description">Product Designer</p>
                         <ul class="comand-section-actions__list">
@@ -228,7 +264,22 @@
                         </ul>
                     </li>
                     <li class="comand-section__item">
-                        <img class="comand-section__image" src="./images/img2.jpg" width="270" height="260" alt="Ольга Репина Frontend Developer">
+                        <!--<img class="comand-section__image" src="./images/img2.jpg" width="270" height="260" alt="Ольга Репина Frontend Developer">-->
+                        <picture>
+                            <source
+                            srcset="./images/img2-desktop.jpg 1x, ./images/img2-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/img2-tablet.jpg 1x, ./images/img2-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/img2-mobile.jpg 1x, ./images/img2-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img class="comand-section__image" src="./images/img2-mobile.jpg" alt="Ольга Репина Frontend Developer" />
+                        </picture>  
                         <h3 class="comand-section__subtitle">Ольга Репина</h3> 
                         <p class="comand-section__description">Frontend Developer</p>
                         <ul class="comand-section-actions__list">
@@ -263,7 +314,22 @@
                         </ul>
                     </li>
                     <li class="comand-section__item">
-                        <img class="comand-section__image" src="./images/img3.jpg" width="270" height="260" alt="Николай Тарасов Marketing">
+                        <!--<img class="comand-section__image" src="./images/img3.jpg" width="270" height="260" alt="Николай Тарасов Marketing">-->
+                        <picture>
+                            <source
+                            srcset="./images/img3-desktop.jpg 1x, ./images/img3-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/img3-tablet.jpg 1x, ./images/img3-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/img3-mobile.jpg 1x, ./images/img3-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img class="comand-section__image" src="./images/img3-mobile.jpg" alt="Николай Тарасов Marketing" />
+                        </picture>  
                         <h3 class="comand-section__subtitle">Николай Тарасов</h3>
                         <p class="comand-section__description">Marketing</p>
                         <ul class="comand-section-actions__list">
@@ -298,7 +364,22 @@
                         </ul>
                     </li>
                     <li class="comand-section__item">
-                        <img class="comand-section__image" src="./images/img4.jpg" width="270" height="260" alt="Михаил Ермаков UI Designer">
+                        <!--<img class="comand-section__image" src="./images/img4.jpg" width="270" height="260" alt="Михаил Ермаков UI Designer">-->
+                        <picture>
+                            <source
+                            srcset="./images/img4-desktop.jpg 1x, ./images/img4-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/img4-tablet.jpg 1x, ./images/img4-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/img4-mobile.jpg 1x, ./images/img4-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img class="comand-section__image" src="./images/img4-mobile.jpg" alt="Михаил Ермаков UI Designer" />
+                        </picture>  
                         <h3 class="comand-section__subtitle">Михаил Ермаков</h3>
                         <p class="comand-section__description">UI Designer</p>   
                         <ul class="comand-section-actions__list">
@@ -334,8 +415,8 @@
                     </li>
                 </ul>
             </div>            
-        </section>-->
-        <!--<section class="clients-section section">
+        </section>
+        <section class="clients-section section">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="clients-section__list">
@@ -383,11 +464,11 @@
                    </li>   
                 </ul>
             </div>          
-        </section>-->
+        </section>
     </main>
     <footer class="footer">
         <div class="container container-footer">
-            <!--<div class="footer__inner">
+            <div class="footer__inner">
                 <a class="footer__logo" href="/index.html">Web<span class="logo-footer-text">Studio</span></a>
                 <address class="footer-contacts">
                 <ul class="footer-contacts__list" >
@@ -402,8 +483,8 @@
                     </li>
                 </ul>
                 </address>
-            </div>-->
-            <!--<div class="footer__inner">
+            </div>
+            <div class="footer__inner">
                 <p class="footer__description">присоединяйтесь</p>
                 <ul class="footer-social__list">
                     <li class="footer-social__item">
@@ -435,8 +516,8 @@
                         </a>
                     </li>          
                 </ul>
-            </div>-->
-            <!--<div class="footer__inner">
+            </div>
+            <div class="footer__inner">
                 <p class="footer__description">Подпишитесь на рассылку</p>
                 <form class="footer__form" name="main-form-footer" autocomplete="on">
                     <div class="form-field-footer">
@@ -451,10 +532,10 @@
                     </div>
                 </form>                           
                 
-            </div>-->
+            </div>
         </div>       
     </footer> 
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button" type="button" data-modal-close>
                 <svg class="modal__button-close" aria-hidden="true">
@@ -508,10 +589,10 @@
                 </form>                    
             </div>
         </div>
-    </div>-->
+    </div>
 
     <script src="./mobile-menu.js"></script>
-    <!--<script src="./modal.js"></script>-->
+    <script src="./modal.js"></script>
 </body>
 </html>
 

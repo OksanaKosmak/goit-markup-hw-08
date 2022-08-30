@@ -53,9 +53,12 @@
         display: inline-block;
     }
     
-    .mobile-nav-menu__item + .nav-menu__item {
+    /*.mobile-nav-menu__item + .nav-menu__item {
         margin-left: 50px;    
-    }
+    }*/
+    
+    .mobile-nav-menu__item:not(:last-child) {
+        margin-bottom: 32px;
     
     .mobile-nav-menu__link {
         color: var(--color-primary);
@@ -200,7 +203,7 @@
 
 
 }
-
+}
 
 
 
