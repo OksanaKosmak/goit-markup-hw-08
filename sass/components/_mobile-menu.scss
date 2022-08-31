@@ -47,10 +47,13 @@
     .mobile-nav-menu {
         display: flex;
         align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
     
     .mobile-nav-menu__item {
         display: inline-block;
+        margin-top: 25px;
     }
     
     /*.mobile-nav-menu__item + .nav-menu__item {
@@ -61,14 +64,23 @@
         margin-bottom: 32px;
     
     .mobile-nav-menu__link {
+        font-family: var(--font-family-primary);
+        color: var(-color-modal-form-text-title);
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: 0.02em;
+
         color: var(--color-primary);
         text-decoration: none;
-        line-height: 1.1428;
-        font-weight: 500;
+        line-height: 1.175;
+        
+        
         text-align: left;
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        /*padding-top: 32px;
+        padding-bottom: 32px;*/
     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -117,10 +129,12 @@
         border-radius: 2px;
     }*/
 
-    .mobile-menu-сontacts {
+    .mobile-menu-contacts {
         display: flex;
         align-items: center;
         margin-left: auto;
+        margin-top: 302px;
+        margin-bottom: 64px;
     }
     
     .mobile-menu-contacts__item + .mobile-menu-contacts__item {
@@ -130,8 +144,9 @@
     .mobile-menu-contacts__link {
         color: var(--color-third);
         text-decoration: none;
-        line-height: 1.1428;
+        line-height: 1.1764;
         font-weight: 500;
+        font-size: 34px;
         text-align: left;
         display: flex;
         align-items: center;
@@ -193,16 +208,7 @@
         color: var(--color);
     }
     
-    /*.mobile-menu-social-link {
-        position: relative;
-        }
-    
-    .mobile-link-nav-portfolio {
-        position: relative;
-    }*/
-
-
-}
+    }
 }
 
 
@@ -214,3 +220,10 @@
 }
 
 
+/*.mobile-menu-social-link {
+        position: relative;
+        }
+    
+    .mobile-link-nav-portfolio {
+        position: relative;
+    }*/
